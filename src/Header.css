@@ -5,7 +5,7 @@ header {
 }
 nav {
   display: flex;
-  max-width: 720px;
+  max-width: 45rem;
   margin: auto;
 }
 .nav-section {
