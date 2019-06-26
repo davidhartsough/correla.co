@@ -1,0 +1,167 @@
+main {
+  max-width: 720px;
+  margin: auto;
+}
+section {
+  padding: 1rem 1rem 3rem;
+}
+.title {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 300;
+  margin-bottom: 0.75rem;
+  line-height: 1.25;
+}
+.subtitle {
+  margin: 0.5rem 0 1rem;
+  font-size: 1.25rem;
+  font-weight: 300;
+  line-height: 1.25;
+}
+hr {
+  border: none;
+  border-top: 1px solid rgba(0, 0, 0, 0.25);
+  margin: 0 0 0.4rem;
+}
+.button {
+  display: block;
+  margin: 1rem auto;
+  font-size: 1rem;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.25rem;
+  background-color: #fff;
+  color: rgba(0, 0, 0, 0.8);
+  font-weight: 500;
+  letter-spacing: 0.025rem;
+  cursor: pointer;
+  outline: none;
+  text-decoration: none;
+  align-items: flex-start;
+  text-align: center;
+  user-select: none;
+}
+.button[disabled] {
+  pointer-events: none;
+  background-color: #aaa;
+}
+.primary-action {
+  background-color: #198bed;
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+  border-radius: 1.25rem;
+  font-weight: 600;
+  line-height: calc(1.5rem - 1px);
+  margin: 1.5rem auto 2rem;
+}
+.primary-action:hover,
+.primary-action:active {
+  background-color: rgba(25, 139, 237, 0.8);
+}
+.primary-action:focus {
+  box-shadow: 0 0 0 0.25rem rgba(25, 139, 237, 0.25);
+}
+
+@media screen and (min-width: 720px) {
+  section {
+    padding-top: 2rem;
+  }
+}
+
+.chips {
+  display: flex;
+  flex-wrap: wrap;
+}
+.chip,
+.link-chip {
+  padding: 0 0.5rem;
+  border: 1px solid rgba(0, 0, 0, 0.24);
+  border-radius: 0.75rem;
+  margin: 0 0.4rem 0.4rem 0;
+  font-size: 0.875rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  text-decoration: none;
+  color: hsla(232, 16%, 8%, 0.96);
+}
+.chip-span {
+  flex: 1 1 auto;
+  height: 1.5rem;
+  line-height: calc(1.5rem - 1px);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.form-group {
+  margin: 1rem 0 0;
+}
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+input,
+textarea {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  outline: none;
+  display: block;
+  width: 100%;
+  height: 2rem;
+  padding: 0 0.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+}
+input[type="text"]:disabled {
+  background-color: #f0f0f0;
+}
+input[type="date"] {
+  text-transform: uppercase;
+}
+textarea {
+  resize: none;
+  width: 100% !important;
+  height: 5rem !important;
+  padding: 0.125rem 0.5rem;
+}
+input:hover,
+textarea:hover {
+  border-color: #aaa;
+}
+input:focus,
+input:active,
+textarea:focus,
+textarea:active {
+  border-color: #198bed;
+}
+input.error {
+  border-color: #f44336;
+}
+.input-helper-text {
+  font-size: 0.875rem;
+  color: #777;
+}
+.input-error-text {
+  font-size: 0.875rem;
+  color: #c51010;
+}
+
+@media screen and (min-width: 480px) {
+  .form-group {
+    display: flex;
+    align-items: center;
+  }
+  label {
+    margin-right: 0.5rem;
+    margin-bottom: 0;
+    min-width: 5rem;
+  }
+}

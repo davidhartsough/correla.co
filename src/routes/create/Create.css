@@ -1,0 +1,18 @@
+#create {
+  text-align: center;
+}
+#username-input {
+  max-width: 17rem;
+  margin: 0 auto;
+  text-align: center;
+  outline: none;
+}
+#username-input-error {
+  max-width: 16rem;
+  margin: 1rem auto;
+}
+#next {
+  margin: 1.5rem auto 2rem;
+  padding: 0.5rem 0;
+  width: 6.5rem;
+}

@@ -1,0 +1,83 @@
+#name-heading {
+  margin: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.25;
+}
+#sub-heading {
+  margin: 0;
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+  font-weight: 300;
+  line-height: 1.25;
+  display: flex;
+  flex-wrap: wrap;
+}
+.sub-heading-span {
+  min-width: 3rem;
+  margin-bottom: 0.25rem;
+  display: flex;
+  align-items: center;
+}
+.sub-heading-span:first-child {
+  margin-right: 0.75rem;
+}
+.sub-heading-span .icon {
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-right: 0.25rem;
+  flex-shrink: 0;
+}
+.profile-section {
+  padding: 0.5rem 0;
+}
+.chip:hover {
+  background-color: rgba(247, 247, 247, 0.8);
+}
+#links .link-chip {
+  border: 1px solid #198bed;
+  color: #198bed;
+  fill: #198bed;
+  text-decoration: none;
+}
+.link-chip:hover {
+  background-color: #f1f6fc;
+  background-color: rgba(25, 139, 237, 0.05);
+}
+.account-buttons {
+  margin-top: 2rem;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.account-buttons .account-button {
+  padding: 0.5rem 1.5rem;
+  border-radius: 1.25rem;
+  font-weight: 600;
+  border: 1px solid #999;
+  line-height: calc(1.5rem - 1px);
+  flex-basis: 138px;
+  width: 138px;
+}
+.account-button:hover,
+.account-button:active {
+  background-color: rgba(247, 247, 247, 0.8);
+}
+.account-button:focus {
+  box-shadow: 0 0 0 0.25rem rgba(212, 220, 228, 0.25);
+}
+#edit-button {
+  color: #198bed;
+  border-color: #198bed;
+  width: 138px;
+}
+@media screen and (min-width: 540px) {
+  #name-heading {
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 400px) {
+  .account-buttons {
+    display: flex;
+  }
+}

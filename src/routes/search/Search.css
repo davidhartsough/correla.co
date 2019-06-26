@@ -1,0 +1,11 @@
+.mtl {
+  margin: 0.25rem 0 0 0;
+}
+@media screen and (min-width: 480px) {
+  .mtl {
+    margin-left: 5.5rem;
+  }
+}
+#search-link {
+  width: 6.5rem;
+}

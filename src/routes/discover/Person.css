@@ -1,0 +1,60 @@
+.person-item {
+  padding: 0.75rem;
+  border-bottom: 1px solid #ccc;
+  display: block;
+  text-decoration: none;
+  color: rgba(0, 0, 0, 0.8);
+  fill: rgba(0, 0, 0, 0.8);
+  background-color: #fff;
+  white-space: nowrap;
+}
+.person-item-top {
+  display: block;
+}
+.person-item:last-child {
+  border-bottom: none;
+}
+.person-item:hover {
+  background-color: rgba(0, 0, 0, 0.02);
+}
+.person-item-section {
+  flex: 1 1 auto;
+  display: flex;
+}
+.person-city {
+  margin-top: 0.25rem;
+}
+.person-item-section-icon {
+  width: 1.5rem;
+  height: 1.5rem;
+  margin-right: 0.5rem;
+}
+.person-item-section-text {
+  height: 1.5rem;
+  font-size: 1rem;
+  line-height: calc(1.5rem - 1px);
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.person-item-identities {
+  margin: 0.5rem 0 0 0;
+  line-height: 1.5;
+  font-size: 0.875rem;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  color: rgba(0, 0, 0, 0.67);
+}
+@media screen and (min-width: 520px) {
+  .person-item {
+    padding: 1rem;
+  }
+  .person-item-top {
+    display: flex;
+  }
+  .person-item-section {
+    width: 50%;
+  }
+  .person-city {
+    margin-top: 0;
+  }
+}

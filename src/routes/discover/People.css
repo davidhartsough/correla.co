@@ -1,0 +1,6 @@
+#people-list {
+  margin-top: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 0.25rem;
+  overflow: hidden;
+}
