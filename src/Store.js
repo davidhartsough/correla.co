@@ -39,7 +39,7 @@ const rrfProps = {
   createFirestoreInstance
 };
 
-function Store({ children }) {
+export default function Store({ children }) {
   return (
     <Provider store={store}>
       <ReactReduxFirebaseProvider {...rrfProps}>
@@ -48,5 +48,3 @@ function Store({ children }) {
     </Provider>
   );
 }
-
-export default Store;

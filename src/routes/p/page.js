@@ -20,7 +20,7 @@ const getLinks = (links, email) => {
   return linkList;
 };
 
-function Page({ p, match, auth }) {
+export default function Page({ p, match, auth }) {
   if (typeof p === "undefined") {
     return <PageLoader />;
   } else if (!p) {
@@ -41,5 +41,3 @@ function Page({ p, match, auth }) {
     />
   );
 }
-
-export default Page;

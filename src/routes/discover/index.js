@@ -43,8 +43,6 @@ function createWhere(q) {
   return where;
 }
 
-function QueryGenerator({ location }) {
-  return <Page where={createWhere(queryString.parse(location.search))} />;
-}
-
-export default QueryGenerator;
+export default ({ location }) => (
+  <Page where={createWhere(queryString.parse(location.search))} />
+);

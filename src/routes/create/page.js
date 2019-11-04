@@ -3,7 +3,7 @@ import { Redirect } from "react-router-dom";
 import PageLoader from "../../PageLoader";
 import Create from "./Create";
 
-function Page({ auth, profile }) {
+export default function Page({ auth, profile }) {
   if (!auth.isLoaded || !profile.isLoaded) {
     return <PageLoader />;
   }
@@ -20,5 +20,3 @@ function Page({ auth, profile }) {
     />
   );
 }
-
-export default Page;

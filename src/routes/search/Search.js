@@ -57,6 +57,7 @@ export default class Search extends React.Component {
             <label htmlFor="city-input">City</label>
             <Autocomplete
               onPlaceSelected={this.onPlaceSelected}
+              onChange={this.handleInputChange}
               type="text"
               id="city-input"
               name="city"

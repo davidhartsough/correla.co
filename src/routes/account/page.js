@@ -2,7 +2,7 @@ import React from "react";
 import { Redirect } from "react-router-dom";
 import PageLoader from "../../PageLoader";
 
-function Page({ auth, profile }) {
+export default function Page({ auth, profile }) {
   if (!auth.isLoaded || !profile.isLoaded) {
     return <PageLoader />;
   }
@@ -14,5 +14,3 @@ function Page({ auth, profile }) {
   }
   return <Redirect to={`/p/${profile.username}`} />;
 }
-
-export default Page;
