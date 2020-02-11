@@ -9,16 +9,8 @@ import {
   firebaseReducer
 } from "react-redux-firebase";
 import { createFirestoreInstance, firestoreReducer } from "redux-firestore";
+import firebaseConfig from "./config";
 
-const firebaseConfig = {
-  apiKey: "AIzaSyBwFsI5UWozqYi5TrO2BOUYVBECzr6r43E",
-  authDomain: "correla-app.firebaseapp.com",
-  databaseURL: "https://correla-app.firebaseio.com",
-  projectId: "correla-app",
-  storageBucket: "correla-app.appspot.com",
-  messagingSenderId: "963552926535",
-  appId: "1:963552926535:web:9cc6603c2c4960ab"
-};
 firebase.initializeApp(firebaseConfig);
 firebase.firestore();
 
